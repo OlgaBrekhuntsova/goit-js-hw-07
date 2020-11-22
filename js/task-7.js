@@ -8,10 +8,6 @@
 
 const fontSizeInput = document.querySelector('input#font-size-control');
 const text = document.querySelector('span#text');
-console.log(fontSizeInput.value );
-const handleFontSize = () =>
-{console.log(fontSizeInput.value );
-  return text.style.fontSize = text.style.fontSize*(100+fontSizeInput.value)/100;
-};
-console.log(fontSizeInput.value );
-fontSizeInput.addEventListener('input', handleFontSize);
+const startFontSize = Number.parseInt(window.getComputedStyle(text).fontSize);
+const handleFontSize = () => text.style.fontSize = `${startFontSize*Number(fontSizeInput.value)/50}px`;
+fontSizeInput.addEventListener('change', handleFontSize);

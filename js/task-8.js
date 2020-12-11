@@ -29,16 +29,14 @@ const startHeight = 30;
 let amount = 0;
 const genColor = () => {
   let col = 0;
-  while (col.length !== 7) {
     col = Math.round(255.0 * Math.random());
-    const r = col.toString(16);
+    const r = col.toString(16).padStart(2, "0");
     col = Math.round(255.0 * Math.random());
-    const g = col.toString(16);
+    const g = col.toString(16).padStart(2, "0");
     col = Math.round(255.0 * Math.random());
-    const b = col.toString(16);
+    const b = col.toString(16).padStart(2, "0");
     col = '#' + r + g + b;
-  }
-   return col;
+    return col;
 };
 const createBoxes = (amount) => {
   amount = Number(amountInput.value);

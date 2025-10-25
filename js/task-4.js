@@ -8,7 +8,6 @@ function handleLoginFormSubmit(e) {
     !loginFormElements.password.value.trim()
   ) {
     alert("All form fields must be filled in");
-    loginForm.reset();
     return;
   }
   const inputData = {};

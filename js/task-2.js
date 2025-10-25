@@ -36,5 +36,4 @@ function imgGallery(images) {
 }
 
 const markup = imgGallery(images);
-console.log("markup", markup);
 gallery.insertAdjacentHTML("afterbegin", markup);

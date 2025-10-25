@@ -17,16 +17,6 @@ img {
   display: block;
 }
 
-/* ul,
-li,
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
-}  */
-
 .gallery{
   display: flex;
   flex-wrap: wrap;
